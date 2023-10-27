@@ -66,8 +66,8 @@ main {
 }
 
 .profile-pic {
-    width: 100%;             /* Makes the image responsive */
-    border-radius: 50%;      /* Rounds the image into a circle */
+    width: 70%;             /* Makes the image responsive */
+    border-radius: 50%;      /* Rounds the image into a circle *
 }
 
 /* Style for the right side */
