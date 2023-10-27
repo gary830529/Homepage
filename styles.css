@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    border: 1px solid black;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;           /* Enables flexbox */
+    justify-content: space-between; /* Puts space between the two divs */
+    align-items: flex-start; /* Aligns the items to the top */
+    gap: 20px;               /* Space between the two divs */
+}
+
+/* Style for the left side */
+.left-side {
+    flex: 1;                 /* Takes up 1 fraction of available space */
+    max-width: 40%;          /* Limits width to 40% of the main content area */
+}
+
+.profile-pic {
+    width: 100%;             /* Makes the image responsive */
+    border-radius: 50%;      /* Rounds the image into a circle */
+}
+
+/* Style for the right side */
+.right-side {
+    flex: 2;                 /* Takes up 2 fractions of available space, making it larger */
+    max-width: 60%;          /* Limits width to 60% of the main content area */
+}
+.fab.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa.fa-envelope {
+    color: #4CAF50;
+}
+
+
+a {
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Ensures the underline doesn't appear on hover either */
+}
