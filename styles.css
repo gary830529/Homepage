@@ -66,8 +66,9 @@ main {
 }
 
 .profile-pic {
-    width: 70%;             /* Makes the image responsive */
-    border-radius: 50%;      /* Rounds the image into a circle *
+    width: 150px; /* or whatever size you prefer */
+    height: auto; /* maintain aspect ratio */
+    border-radius: 50%; /* to keep it circular */
 }
 
 /* Style for the right side */
@@ -90,4 +91,26 @@ a {
 
 a:hover {
     text-decoration: underline; /* Ensures the underline doesn't appear on hover either */
+}
+
+.profile-pic {
+    margin: 0 auto 20px auto; /* auto will center the image if the parent is a block */
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+.about-content { /* assuming you have a container div for the 'About me' section */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profile-container { /* assuming you have a parent container for your entire profile */
+    display: flex;
+    justify-content: center; /* centers items horizontally */
+    align-items: center; /* centers items vertically */
+    flex-direction: column; /* stack items vertically */
+}
+
+.main-content {
+    padding: 0 20px; /* 0 top and bottom, 20px left and right */
 }
