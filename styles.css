@@ -59,7 +59,7 @@ main {
 
 .left-side {
     flex: 1;
-    max-width: 20%;
+    max-width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center; /* centers the content horizontally */
