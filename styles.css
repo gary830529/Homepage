@@ -6,13 +6,19 @@ body {
 }
 
 header {
-    background-color: #f4f4f4;
+    background-image: url('https://raw.githubusercontent.com/gary830529/Homepage/main/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     text-align: center;
 }
 
-header h1 {
+header h1, header h2, header a {
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-weight: bold;
 }
 
 nav ul {
@@ -28,20 +34,30 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: ffffff;
     padding: 5px 15px;
-    border: 1px solid black;
+    
 }
 
 nav ul li a:hover {
-    background-color: black;
+    background-color: #22222277;
     color: white;
+    border-radius: 10%;
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-image: url('https://raw.githubusercontent.com/gary830529/Homepage/main/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 10px;
     text-align: center;
+}
+
+footer h1, footer h2, footer p, footer a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-weight: bold;
 }
 
 img {
@@ -73,7 +89,7 @@ main {
 
 .profile-pic {
     margin: 0 auto 20px auto;
-    width: 150px;
+    width: 200px;
     border-radius: 50%;
 }
 
