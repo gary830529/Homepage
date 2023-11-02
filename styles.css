@@ -101,29 +101,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.research-container {
-    width: 800px; /* adjust as needed */
-    margin: 0 auto;
-}
-
-.research-section {
-    display: flex; /* use flexbox for layout */
-    align-items: center; /* center items vertically */
-    margin-bottom: 40px; /* increased spacing between sections */
-    gap: 20px; /* space between the image and text */
-}
-
-.research-section img {
-    width: 200px; /* adjust as needed */
-    height: auto;
-    flex-shrink: 0; /* prevent the image from shrinking */
-}
-
-.research-section div {
-    flex: 1; /* allows the text container to grow and use the available space */
-    text-align: justify;
-}
-
 .aboutme-section p {
     text-align: justify;
 }
