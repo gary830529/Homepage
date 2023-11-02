@@ -105,19 +105,22 @@ a:hover {
     width: 800px; /* adjust as needed */
     margin: 0 auto;
 }
+
 .research-section {
-    clear: both;
+    display: flex; /* use flexbox for layout */
+    align-items: center; /* center items vertically */
     margin-bottom: 40px; /* increased spacing between sections */
+    gap: 20px; /* space between the image and text */
 }
+
 .research-section img {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px; /* space between the images */
     width: 200px; /* adjust as needed */
     height: auto;
+    flex-shrink: 0; /* prevent the image from shrinking */
 }
+
 .research-section div {
-    overflow: hidden; /* ensures the text wraps around the image properly */
+    flex: 1; /* allows the text container to grow and use the available space */
     text-align: justify;
 }
 
