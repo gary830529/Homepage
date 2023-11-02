@@ -100,3 +100,27 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.research-container {
+    width: 800px; /* adjust as needed */
+    margin: 0 auto;
+}
+.research-section {
+    clear: both;
+    margin-bottom: 40px; /* increased spacing between sections */
+}
+.research-section img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px; /* space between the images */
+    width: 200px; /* adjust as needed */
+    height: auto;
+}
+.research-section div {
+    overflow: hidden; /* ensures the text wraps around the image properly */
+    text-align: justify;
+}
+
+.aboutme-section p {
+    text-align: justify;
+}
