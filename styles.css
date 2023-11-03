@@ -84,7 +84,7 @@ main {
 
 .right-side {
     flex: 2;
-    max-width: 80%;
+    max-width: 60%;
 }
 
 .profile-pic {
