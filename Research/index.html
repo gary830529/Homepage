@@ -68,36 +68,31 @@
 <style>
 .research-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.research-section {
-    display: flex; /* use flexbox for layout */
-    align-items: center; /* center items vertically */
-    margin-bottom: 60px; /* increased spacing between sections */
-    gap: 20px; /* space between the image and text */
+    margin-bottom: 60px;
+    gap: 20px;
 }
 
 .research-section img {
-    width: 400px; /* adjust as needed */
+    width: 400px;
     height: auto;
-    flex-shrink: 0; /* prevent the image from shrinking */
+    flex-shrink: 0;
 }
 
-.research-section div {
-    flex: 1; /* allows the text container to grow and use the available space */
+.research-section .content-container {
+    flex: 1;
     text-align: justify;
 }
 
 /* Media Query for Smaller Screens */
 @media (max-width: 1300px) {
     .research-section {
-        flex-direction: column; /* stack the children (image and text) vertically */
-        align-items: flex-start; /* align items to the start */
+        flex-direction: column-reverse; /* Reverse the order on smaller screens */
         align-items: center;
+    }
+    .research-section img {
+        width: 100%; /* Make the image full width on smaller screens */
+        max-width: 400px; /* Limit the maximum width */
     }
 }
 footer {
@@ -115,36 +110,37 @@ footer {
             <div class="right-side">
                 <div class="right-side">
                     <div class="research-section">
-                        <h2>Onsite Wastewater Treatment & Sanitation</h2>
+                        <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/NG_ToC.jpg" alt="NG">
                         <div class="content-container">
-                            <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/NG_ToC.jpg" alt="NG">
+                            <h2>Onsite Wastewater Treatment & Sanitation</h2>
                             <p>The NEWgenerator™, an advanced non-sewered sanitation system, was deployed in an informal community in Durban, South Africa, in 2018. It includes an anaerobic membrane bioreactor (AnMBR), a nutrient capture system, and an electrochlorinator, collectively treating high-strength wastewater with high efficacy. Demonstrating significant contaminant removal, resilience to environmental and usage fluctuations, and a reduced need for sludge management, the system offers a scalable solution for safely managed sanitation and provides a means for non-potable water reuse to address the global water and sanitation crisis.</p>
                         </div>
                     </div>
-                
+
                     <div class="research-section">
-                        <h2>Sustainable Nutrients Management</h2>
+                        <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/Z_Pic.jpg" alt="NG">
                         <div class="content-container">
-                            <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/Z_Pic.jpg" alt="Zeolite">
+                            <h2>Sustainable Nutrients Management</h2>
                             <p>The research examines nitrogen (predominantly ammonium) and phosphorus recovery from blackwater via natural and modified clinoptilolite zeolite in a NEWgenerator™ system. It highlights significant nutrient removal and zeolite regeneration efficiencies under fluctuating loads, emphasizing its dual utility in wastewater treatment—as a regenerable adsorbent and as a nutrient-rich fertilizer in a non-sewered sanitation system in the field.</p>
                         </div>
                     </div>
 
                     <div class="research-section">
-                        <h2>System Dynamics Modeling</h2>
+                        <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/STELLA_Pic.jpg" alt="NG">
                         <div class="content-container">
-                            <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/STELLA_Pic.jpg" alt="Modeling">
+                            <h2>System Dynamics Modeling</h2>
                             <p>Employing <a href="https://www.iseesystems.com/store/products/stella-architect.aspx" style="color: #00acee"> Stella<sup>®</sup> Architect</a> for system dynamics, this study develops an intricate model for the NEWgenerator™, optimizing the treatment of water, energy, and nutrients. The approach facilitates scenario-based evaluations, vital for refining the performance and maintenance of this pioneering non-sewer sanitation system across various settings.</p>
                         </div>
                     </div>
 
                     <div class="research-section">
-                        <h2>Machine Learning for OWTS Monitoring</h2>
+                        <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/ML_ToC.jpg" alt="NG">
                         <div class="content-container">
-                            <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/ML_ToC.jpg" alt="ML paper">
+                            <h2>Machine Learning for OWTS Monitoring</h2>
                             <p>Leveraging machine learning's predictive prowess, this study seeks to revolutionize OWTS (Onsite wastewater treatment system) monitoring by crafting soft sensor models that draw from real-time, in-line sensor data. These models promise to bypass the limitations of traditional lab analysis, delivering prompt and precise assessments of essential water quality metrics, thus optimizing treatment efficacy and adherence to environmental standards.</p>
                         </div>
                     </div>
+
 
                 </div>
             </div>
