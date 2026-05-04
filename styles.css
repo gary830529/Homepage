@@ -1,4 +1,4 @@
-/* --- Global Reset & Base Styles --- */
+/* --- 1. Global Reset & Base Styles --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.7; /* Balanced for academic reading */
+    line-height: 1.7;
     color: #333;
     background-color: #fcfcfc;
 }
 
-/* --- Header & Navigation --- */
+/* --- 2. Header & Navigation --- */
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                       url('https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +36,7 @@ nav ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 15px;
+    padding: 12px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
     display: inline-flex;
@@ -56,7 +56,7 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* --- Layout Container --- */
+/* --- 3. Layout Structure --- */
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -70,7 +70,7 @@ main {
     gap: 50px;
 }
 
-/* --- Sidebar (Left) --- */
+/* Sidebar (Left) */
 .left-side {
     flex: 1;
     min-width: 280px;
@@ -80,6 +80,12 @@ main {
     text-align: center;
 }
 
+/* Main Content (Right) */
+.right-side {
+    flex: 2;
+}
+
+/* --- 4. Sidebar Details --- */
 .profile-pic {
     width: 220px;
     height: 220px;
@@ -112,27 +118,27 @@ main {
     width: 25px;
     margin-right: 12px;
     font-size: 1.1rem;
+    text-align: center;
 }
 
-/* --- Content (Right) --- */
-.right-side {
-    flex: 2;
-}
-
+/* --- 5. Typography & Headings --- */
 h2 {
     color: #006747; /* USF Green */
-    border-bottom: 2px solid #C4D600;
+    border-bottom: 2px solid #C4D600; /* USF Gold */
     padding-bottom: 8px;
     margin-bottom: 20px;
     font-size: 1.8rem;
 }
 
-.aboutme-section p {
-    text-align: justify;
-    margin-bottom: 20px;
+h3 {
+    margin-bottom: 5px;
+    color: #444;
 }
 
-/* --- Links & Utility --- */
+p {
+    margin-bottom: 15px;
+}
+
 a {
     color: #006747;
     text-decoration: none;
@@ -144,32 +150,111 @@ a:hover {
     color: #004d35;
 }
 
-/* --- Footer --- */
+/* --- 6. Research Section Styling --- */
+.research-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.research-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.research-section img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.research-section .content-container {
+    flex: 1;
+    text-align: justify;
+}
+
+/* --- 7. News Feed Styling --- */
+.news-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news-date {
+    font-weight: bold;
+    color: #006747;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* --- 8. Publication & Link Buttons --- */
+.pub-list {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.pub-list li {
+    margin-bottom: 20px;
+}
+
+.pub-link {
+    display: inline-block;
+    background: #f4f4f4;
+    color: #333 !important;
+    padding: 3px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    text-decoration: none !important;
+}
+
+.pub-link:hover {
+    background: #006747;
+    color: #fff !important;
+    border-color: #006747;
+}
+
+/* --- 9. Footer --- */
 footer {
     background-color: #222;
     padding: 30px;
     text-align: center;
     color: #ffffff;
+    margin-top: 40px;
 }
 
 footer a {
     color: #C4D600;
 }
 
-/* --- Responsive Design (Mobile) --- */
-@media (max-width: 850px) {
+/* --- 10. Responsive Design --- */
+@media (max-width: 950px) {
     main {
         flex-direction: column;
         padding: 30px 20px;
     }
 
     .left-side {
-        max-width: 100%;
         border-bottom: 1px solid #eee;
         padding-bottom: 30px;
+        margin-bottom: 20px;
     }
 
-    .right-side {
-        max-width: 100%;
+    .research-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .research-section img {
+        width: 100%;
+        max-width: 400px;
     }
 }
