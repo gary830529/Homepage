@@ -1,106 +1,175 @@
-body {
-    font-family: Arial, sans-serif;
+/* --- Global Reset & Base Styles --- */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    line-height: 2;
 }
 
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.7; /* Balanced for academic reading */
+    color: #333;
+    background-color: #fcfcfc;
+}
+
+/* --- Header & Navigation --- */
 header {
-    background-image: url('https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                      url('https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-header h1, header h2, header a {
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    font-weight: bold;
 }
 
 nav ul {
-    padding: 0;
     list-style-type: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    display: inline-flex;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: ffffff;
-    padding: 5px 15px;
-    
+    color: #ffffff;
+    padding: 8px 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #22222277;
-    color: white;
-    border-radius: 10%;
+    background-color: #006747; /* USF Green */
+    color: #C4D600; /* USF Gold */
+    border-radius: 4px;
 }
 
-footer {
-    background-image: url('https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10px;
-    text-align: center;
-}
-
-footer h1, footer h2, footer p, footer a {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    font-weight: bold;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+/* --- Layout Container --- */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.05);
 }
 
 main {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
+    padding: 50px 40px;
+    gap: 50px;
 }
 
+/* --- Sidebar (Left) --- */
 .left-side {
     flex: 1;
-    max-width: 40%;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers the content horizontally */
-    justify-content: center;
-}
-
-.right-side {
-    flex: 2;
-    max-width: 70%;
+    align-items: center;
+    text-align: center;
 }
 
 .profile-pic {
-    margin: 0 auto 20px auto;
-    width: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f0f0f0;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-a {
-    text-decoration: none;
+.profile-pic:hover {
+    transform: scale(1.02);
 }
 
-a:hover {
-    text-decoration: underline;
+.contact-info {
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-info li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.contact-info i {
+    width: 25px;
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+/* --- Content (Right) --- */
+.right-side {
+    flex: 2;
+}
+
+h2 {
+    color: #006747; /* USF Green */
+    border-bottom: 2px solid #C4D600;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
 
 .aboutme-section p {
     text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* --- Links & Utility --- */
+a {
+    color: #006747;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #004d35;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #222;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer a {
+    color: #C4D600;
+}
+
+/* --- Responsive Design (Mobile) --- */
+@media (max-width: 850px) {
+    main {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .left-side {
+        max-width: 100%;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 30px;
+    }
+
+    .right-side {
+        max-width: 100%;
+    }
 }
