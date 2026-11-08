@@ -7,7 +7,7 @@
     <meta name="description" content="Hsiang-Yang (Gary) Shyu, Ph.D. — Postdoctoral Researcher at USF studying wastewater treatment, nutrient recovery, and machine learning for water quality monitoring.">
     <title>Hsiang-Yang (Gary) Shyu | USF Researcher</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
 </head>
 
@@ -30,7 +30,7 @@
         <main>
             <aside class="left-side">
                 <div class="profile-card">
-                    <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/headshot2.jpg" alt="Hsiang-Yang Gary Shyu Profile Photo" class="profile-pic">
+                    <img src="Figures/headshot2.jpg" alt="Hsiang-Yang Gary Shyu Profile Photo" class="profile-pic">
                     <h3>Postdoctoral Researcher</h3>
                     <p>USF Civil &amp; Environmental Engineering</p>
 
@@ -60,8 +60,8 @@
                                 <a href="https://github.com/gary830529" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </li>
                             <li>
-                                <i class="fab fa-twitter" style="color: #00acee"></i>
-                                <a href="https://twitter.com/GaryShyu0529" target="_blank" rel="noopener noreferrer">Twitter</a>
+                                <i class="fab fa-x-twitter" style="color: #000000"></i>
+                                <a href="https://x.com/GaryShyu0529" target="_blank" rel="noopener noreferrer">X</a>
                             </li>
                         </ul>
                     </address>
@@ -78,17 +78,22 @@
                     </p>
 
                     <p>
-                        Our research focuses on advanced wastewater treatment for non-sewered sanitation. I lead efforts within the
-                        <a href="https://www.youtube.com/watch?v=v5pW_Mqt6dU" target="_blank" rel="noopener noreferrer">NEWgenerator™</a>
-                        project—an innovative system that transforms wastewater into <strong>clean water, nutrients, and energy</strong>.
+                        My work sits at the intersection of <strong>wastewater process engineering</strong> and <strong>machine learning</strong>.
+                        As a postdoc, I contribute to the
+                        <a href="https://gary830529.github.io/Homepage/Research/">Honu Hub</a>, a solar-powered onsite wastewater recycling system,
+                        where I built its data logging, remote monitoring, and control system and am integrating AI into its design and monitoring.
                     </p>
 
                     <p>
-                        My expertise involves membrane-based separation, nutrient recycling adsorbents, and the integration of <strong>machine learning</strong> to develop soft sensors for real-time water quality monitoring.
+                        During my Ph.D., I led the field evaluation of the
+                        <a href="https://www.youtube.com/watch?v=v5pW_Mqt6dU" target="_blank" rel="noopener noreferrer">NEWgenerator™</a>,
+                        a non-sewered sanitation system that recovers <strong>clean water, nutrients, and energy</strong> from wastewater, and developed
+                        machine learning <strong>soft sensors</strong> for real-time water quality monitoring. My expertise also includes membrane-based separation,
+                        nutrient recovery with advanced adsorbents, and dynamic process modeling.
                     </p>
 
                     <p>
-                        I earned my Ph.D. in Civil and Environmental Engineering from USF in 2024. I am honored to be the 14<sup>th</sup> doctoral graduate from the Membrane Biotechnology Lab!
+                        I earned my Ph.D. in Environmental Engineering from USF in 2024. I am honored to be the 14<sup>th</sup> doctoral graduate from the Membrane Biotechnology Lab!
                     </p>
 
                     <p>
@@ -106,11 +111,9 @@
         </footer>
     </div>
     <script>
-        const path = window.location.pathname;
+        const here = location.pathname.replace(/index\.html$/, '');
         document.querySelectorAll('nav a').forEach(a => {
-            if (a.getAttribute('href') === path || (path === '/' && a.getAttribute('href').endsWith('/Homepage/'))) {
-                a.classList.add('active');
-            }
+            if (new URL(a.href, location.href).pathname === here) a.classList.add('active');
         });
     </script>
 </body>

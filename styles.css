@@ -17,7 +17,7 @@ body {
 /* --- 2. Header & Navigation --- */
 header {
     background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                      url('https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/background.jpg');
+                      url('Figures/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

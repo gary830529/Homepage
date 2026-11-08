@@ -7,7 +7,7 @@
     <meta name="description" content="Latest news and updates from Hsiang-Yang (Gary) Shyu — awards, milestones, and research highlights.">
     <title>News | Hsiang-Yang (Gary) Shyu</title>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
 </head>
 
@@ -30,7 +30,7 @@
         <main>
             <aside class="left-side">
                 <div class="profile-card">
-                    <img src="https://raw.githubusercontent.com/gary830529/Homepage/main/Figures/headshot2.jpg" alt="Hsiang-Yang Gary Shyu Profile Photo" class="profile-pic">
+                    <img src="../Figures/headshot2.jpg" alt="Hsiang-Yang Gary Shyu Profile Photo" class="profile-pic">
                     <h3>Postdoctoral Researcher</h3>
                     <p>USF Civil &amp; Environmental Engineering</p>
 
@@ -42,7 +42,7 @@
                             <li><i class="fab fa-linkedin" style="color: #0077B5"></i><a href="https://www.linkedin.com/in/hsiangyang-888641158" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
                             <li><i class="ai ai-google-scholar-square" style="color: #4285F4"></i><a href="https://scholar.google.com/citations?user=e8Inw1wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
                             <li><i class="fab fa-github" style="color: #6cc644"></i><a href="https://github.com/gary830529" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                            <li><i class="fab fa-twitter" style="color: #00acee"></i><a href="https://twitter.com/GaryShyu0529" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                            <li><i class="fab fa-x-twitter" style="color: #000000"></i><a href="https://x.com/GaryShyu0529" target="_blank" rel="noopener noreferrer">X</a></li>
                         </ul>
                     </address>
                 </div>
@@ -53,8 +53,23 @@
 
                 <div class="news-container">
                     <div class="news-item">
+                        <span class="news-date">December 2025</span>
+                        <p>📄 New paper published in <strong><em>Water Research X</em></strong>: "Advanced non-sewered sanitation system for onsite water recycling in a South African informal settlement." <a href="https://doi.org/10.1016/j.wroa.2025.100342" target="_blank" rel="noopener noreferrer">Read it here</a>.</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="news-date">2025</span>
+                        <p>🐢 Our <strong>Honu Hub</strong> onsite wastewater recycling system was featured by USF Engineering. I built its remote monitoring and control system and am integrating machine learning into its operation. <a href="https://www.usf.edu/engineering/news/2025/usf-engineering-research-team-tackles-americas-hidden-sanitation-crisis-with-breakthrough-wastewater-technology.aspx" target="_blank" rel="noopener noreferrer">Read the story</a>.</p>
+                    </div>
+
+                    <div class="news-item">
+                        <span class="news-date">August 2024</span>
+                        <p>🔬 Started as a <strong>Postdoctoral Research Scholar</strong> in the Membrane Biotechnology Lab at USF.</p>
+                    </div>
+
+                    <div class="news-item">
                         <span class="news-date">July 2024</span>
-                        <p>🎉 <strong>Major Milestone:</strong> Successfully defended my Ph.D. dissertation in Civil and Environmental Engineering at the University of South Florida!</p>
+                        <p>🎉 <strong>Major Milestone:</strong> Successfully defended my Ph.D. dissertation in Environmental Engineering at the University of South Florida!</p>
                     </div>
 
                     <div class="news-item">
@@ -80,9 +95,9 @@
         </footer>
     </div>
     <script>
-        const path = window.location.pathname;
+        const here = location.pathname.replace(/index\.html$/, '');
         document.querySelectorAll('nav a').forEach(a => {
-            if (a.getAttribute('href') === path) a.classList.add('active');
+            if (new URL(a.href, location.href).pathname === here) a.classList.add('active');
         });
     </script>
 </body>
